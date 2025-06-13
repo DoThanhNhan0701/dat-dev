@@ -1,11 +1,878 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0031)# -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Dat</title>
-</head>
+    <title>Portfolio</title>
+    <link rel="icon" href="https://datdev.io.vn/bubble-chart_8084088.png" type="image/png">
+    <link rel="stylesheet" href="./index_files/style.css">
+    <link href="./index_files/all.min.css" rel="stylesheet">
+    <link href="./index_files/css2" rel="stylesheet">
+    <link href="./index_files/css2(1)" rel="stylesheet">
+<style>
+            @keyframes shimmer {
+                0% { transform: translateX(-100%); }
+                100% { transform: translateX(100%); }
+            }
+            
+            @keyframes rotate {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+            
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 100%; }
+            }
+            
+            .cursor {
+                transition: all 0.15s ease !important;
+            }
+        </style></head>
 <body>
-    <h1>Hello anh Dat c</h1>
-</body>
-</html>
+    <!-- Particle Background -->
+    <div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1412" height="969"></canvas></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#">
+                    <h2 class="logo-text">
+                        <span class="logo-main">DatBE</span>
+                        <span class="logo-sub">DEV Cu to</span>
+                    </h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Trang chủ</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://datdev.io.vn/about.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>Giới thiệu</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://datdev.io.vn/skills.html" class="nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>Kỹ năng</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://datdev.io.vn/projects.html" class="nav-link">
+                        <i class="fas fa-rocket"></i>
+                        <span>Dự án</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://datdev.io.vn/contact.html" class="nav-link">
+                        <i class="fas fa-satellite-dish"></i>
+                        <span>Liên hệ</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Backend Developer</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="typing-effect">Hello! I</span>
+                    <br>
+                    <span class="hero-name glitch" data-text="TRẦN VĂN ĐẠT">TRẦN VĂN ĐẠT</span>
+                </h1>
+                <h2 class="hero-subtitle animate-gradient">
+                    <i class="fas fa-server"></i>
+                    Backend Developer &amp; System Architect
+                </h2>
+                <p class="hero-description">
+                    Tôi xây dựng <span class="highlight-tech">backend systems</span> mạnh mẽ với 
+                    <span class="highlight-tech">Python</span>, <span class="highlight-tech">Node.js</span> 
+                    và <span class="highlight-tech">database design</span>. 
+                    Chuyên về <span class="highlight-tech">REST APIs</span>, 
+                    <span class="highlight-tech">microservices</span> và 
+                    <span class="highlight-tech">scalable architecture</span>.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3">2</div>
+                        <div class="stat-label">Năm kinh nghiệm</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Dự án hoàn thành</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">Công nghệ</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://datdev.io.vn/contact.html" class="btn btn-primary pulse-btn">
+                        <i class="fas fa-rocket"></i>
+                        <span>Bắt đầu dự án</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="https://datdev.io.vn/projects.html" class="btn btn-secondary">
+                        <i class="fas fa-folder-open"></i>
+                        <span>Khám phá Portfolio</span>
+                    </a>
+                    <a href="##" class="btn btn-ghost" id="downloadCV">
+                        <i class="fas fa-download"></i>
+                        <span>Tải CV</span>
+                    </a>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-text">Cuộn xuống để khám phá</div>
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-glow"></div>
+                    <div class="profile-circle floating">
+                        <div class="profile-border"></div>
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="orbit-ring ring-1">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit-ring ring-2">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit-ring ring-3">
+                            <div class="orbit-dot"></div>
+                        </div>
+                    </div>
+                    <div class="tech-icons floating-icons">
+                        <div class="tech-icon" style="--delay: 0s; --x: -80px; --y: -60px;">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tech-icon" style="--delay: 1s; --x: 70px; --y: -40px;">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="tech-icon" style="--delay: 2s; --x: -60px; --y: 80px;">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="tech-icon" style="--delay: 3s; --x: 90px; --y: 70px;">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="tech-icon" style="--delay: 4s; --x: 0px; --y: -100px;">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="tech-icon" style="--delay: 2.5s; --x: -100px; --y: 20px;">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                    <div class="tech-icon" style="--x: 10%; --y: 20%; --delay: 0s;"><i class="fab fa-python"></i></div><div class="tech-icon" style="--x: 85%; --y: 15%; --delay: 1s;"><i class="fab fa-js-square"></i></div><div class="tech-icon" style="--x: 15%; --y: 70%; --delay: 2s;"><i class="fab fa-node-js"></i></div><div class="tech-icon" style="--x: 80%; --y: 65%; --delay: 0.5s;"><i class="fab fa-react"></i></div><div class="tech-icon" style="--x: 20%; --y: 45%; --delay: 1.5s;"><i class="fab fa-docker"></i></div><div class="tech-icon" style="--x: 75%; --y: 40%; --delay: 2.5s;"><i class="fas fa-database"></i></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-waves">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Featured Technologies Section -->
+    <section class="featured-tech">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">
+                    <i class="fas fa-code"></i>
+                    Công nghệ chuyên môn
+                </h2>
+                <p class="section-description">
+                    Các công nghệ và framework tôi sử dụng để xây dựng hệ thống backend mạnh mẽ và có thể mở rộng
+                </p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card" data-tech="python" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Django, FastAPI, Flask</p>
+                    <div class="tech-progress" data-progress="90">
+                        <div class="progress-bar" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="tech-card" data-tech="nodejs" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Express, NestJS, TypeScript</p>
+                    <div class="tech-progress" data-progress="85">
+                        <div class="progress-bar" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="tech-card" data-tech="database" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, MongoDB, Redis</p>
+                    <div class="tech-progress" data-progress="88">
+                        <div class="progress-bar" data-width="88%"></div>
+                    </div>
+                </div>
+                <div class="tech-card" data-tech="cloud" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>Cloud &amp; DevOps</h3>
+                    <p>AWS, Docker, CI/CD</p>
+                    <div class="tech-progress" data-progress="82">
+                        <div class="progress-bar" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="tech-card" data-tech="api" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>API Development</h3>
+                    <p>REST, GraphQL, WebSocket</p>
+                    <div class="tech-progress" data-progress="80">
+                        <div class="progress-bar" data-width="92%"></div>
+                    </div>
+                </div>
+                <div class="tech-card" data-tech="architecture" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>System Design</h3>
+                    <p>Microservices, Scalability</p>
+                    <div class="tech-progress" data-progress="75">
+                        <div class="progress-bar" data-width="87%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation Section -->
+    <section class="quick-nav">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">
+                    <i class="fas fa-rocket"></i>
+                    Khám phá Portfolio
+                </h2>
+                <p class="section-description">
+                    Điều hướng nhanh đến các phần quan trọng trong portfolio của tôi
+                </p>
+            </div>
+            <div class="quick-nav-grid">
+                <a href="https://datdev.io.vn/about.html" class="quick-nav-card glass" data-tilt="" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="card-glow"></div>
+                    <div class="quick-nav-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3>Giới thiệu</h3>
+                    <p>Khám phá hành trình phát triển và kinh nghiệm chuyên môn của tôi</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="https://datdev.io.vn/skills.html" class="quick-nav-card glass" data-tilt="" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="card-glow"></div>
+                    <div class="quick-nav-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Kỹ năng</h3>
+                    <p>Tìm hiểu các công nghệ, framework và kỹ năng chuyên môn</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="https://datdev.io.vn/projects.html" class="quick-nav-card glass" data-tilt="" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="card-glow"></div>
+                    <div class="quick-nav-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Dự án</h3>
+                    <p>Xem các dự án nổi bật và giải pháp công nghệ đã thực hiện</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="https://datdev.io.vn/contact.html" class="quick-nav-card glass" data-tilt="" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="card-glow"></div>
+                    <div class="quick-nav-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Liên hệ</h3>
+                    <p>Kết nối và thảo luận về cơ hội hợp tác trong các dự án</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">
+                    <i class="fas fa-quote-left"></i>
+                    Đánh giá từ khách hàng
+                </h2>
+                <p class="section-description">
+                    Phản hồi từ các đối tác và khách hàng đã hợp tác
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass" data-aos="fade-up" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Đạt đã phát triển một hệ thống backend rất ấn tượng cho dự án của chúng tôi. API design chuyên nghiệp, performance tối ưu và dễ dàng scale."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Nguyễn Văn A</h4>
+                            <p>CTO - Tech Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass" data-aos="fade-up" data-aos-delay="200" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Chuyên nghiệp trong việc thiết kế database và tối ưu query. Hệ thống chạy rất ổn định và hiệu suất cao."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Lê Thị B</h4>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass" data-aos="fade-up" data-aos-delay="400" style="opacity: 0; transform: translateY(50px); transition: 0.6s;">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"API documentation xuất sắc và code structure rất clean. Dễ dàng maintain và extend hệ thống."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Phạm Văn C</h4>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>
+                    <i class="fas fa-rocket"></i>
+                    Sẵn sàng bắt đầu dự án tiếp theo?
+                </h2>
+                <p>
+                    Hãy cùng nhau xây dựng những giải pháp backend mạnh mẽ và có thể mở rộng.
+                    Từ ý tưởng đến sản phẩm hoàn thiện.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://datdev.io.vn/contact.html" class="cta-btn primary pulse-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Bắt đầu ngay</span>
+                    </a>
+                    <a href="https://datdev.io.vn/projects.html" class="cta-btn secondary">
+                        <i class="fas fa-eye"></i>
+                        <span>Xem Portfolio</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        <i class="fas fa-server"></i>
+                        Trần Văn Đạt
+                    </h3>
+                    <p>Backend Developer chuyên về Python, Node.js và system architecture. Đam mê xây dựng hệ thống scalable và hiệu suất cao.</p>
+                    <div class="footer-social">
+                        <a href="##" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="##" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="##" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="##" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Dịch vụ</h3>
+                    <ul>
+                        <li><a href="##">Backend Development</a></li>
+                        <li><a href="##">API Design &amp; Development</a></li>
+                        <li><a href="##">Database Design</a></li>
+                        <li><a href="##">System Architecture</a></li>
+                        <li><a href="##">DevOps &amp; Deployment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Công nghệ</h3>
+                    <ul>
+                        <li><a href="##">Python &amp; Django</a></li>
+                        <li><a href="##">Node.js &amp; Express</a></li>
+                        <li><a href="##">PostgreSQL &amp; MongoDB</a></li>
+                        <li><a href="##">AWS &amp; Docker</a></li>
+                        <li><a href="##">API Design &amp; Architecture</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> dat.dev@example.com</li>
+                        <li><i class="fas fa-phone"></i> +84 xxx xxx xxx</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Hà Nội, Việt Nam</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Trần Văn Đạt. Tất cả quyền được bảo lưu.</p>
+                <p>Được phát triển với <i class="fas fa-heart pulse"></i> và <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-rocket"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./index_files/particles.min.js"></script>
+    <script>
+        // Particles.js Configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#00d4ff'
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#00d4ff',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+
+        // Typing Effect for Hero Text
+        document.addEventListener('DOMContentLoaded', function() {
+            const texts = [
+                'Xin chào! Tôi là Dat BEBEBEBEBEB',
+                'Hello! I am Dat BEBEBEBEBEB',
+                'こんにちは！私は Dat BEBEBEBEBEB',
+                '你好！我是 Dat BEBEBEBEBEB'
+            ];
+            
+            const typingElement = document.querySelector('.typing-effect');
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            
+            function typeText() {
+                const currentText = texts[textIndex];
+                
+                if (isDeleting) {
+                    typingElement.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingElement.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+                
+                let typeSpeed = isDeleting ? 50 : 100;
+                
+                if (!isDeleting && charIndex === currentText.length) {
+                    typeSpeed = 2000;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    typeSpeed = 500;
+                }
+                
+                setTimeout(typeText, typeSpeed);
+            }
+            
+            typeText();
+        });
+
+        // Floating Tech Icons Positioning
+        function positionFloatingIcons() {
+            const icons = [
+                { icon: 'fab fa-python', x: '10%', y: '20%', delay: '0s' },
+                { icon: 'fab fa-js-square', x: '85%', y: '15%', delay: '1s' },
+                { icon: 'fab fa-node-js', x: '15%', y: '70%', delay: '2s' },
+                { icon: 'fab fa-react', x: '80%', y: '65%', delay: '0.5s' },
+                { icon: 'fab fa-docker', x: '20%', y: '45%', delay: '1.5s' },
+                { icon: 'fas fa-database', x: '75%', y: '40%', delay: '2.5s' }
+            ];
+            
+            const floatingContainer = document.querySelector('.floating-icons');
+            if (floatingContainer) {
+                icons.forEach(iconData => {
+                    const iconEl = document.createElement('div');
+                    iconEl.className = 'tech-icon';
+                    iconEl.style.setProperty('--x', iconData.x);
+                    iconEl.style.setProperty('--y', iconData.y);
+                    iconEl.style.setProperty('--delay', iconData.delay);
+                    iconEl.innerHTML = `<i class="${iconData.icon}"></i>`;
+                    floatingContainer.appendChild(iconEl);
+                });
+            }
+        }
+
+        // Progress Bar Animation
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            const progressValues = ['90', '85', '88', '82', '80', '75'];
+            
+            progressBars.forEach((bar, index) => {
+                setTimeout(() => {
+                    bar.style.width = progressValues[index] + '%';
+                }, 1000 + (index * 200));
+            });
+        }
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    
+                    // Trigger progress bars if in tech section
+                    if (entry.target.classList.contains('tech-card')) {
+                        const progressBar = entry.target.querySelector('.progress-bar');
+                        if (progressBar) {
+                            const progress = progressBar.parentElement.dataset.progress || '75';
+                            setTimeout(() => {
+                                progressBar.style.width = progress + '%';
+                            }, 500);
+                        }
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.tech-card, .testimonial-card, .quick-nav-card');
+            
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(50px)';
+                el.style.transition = 'all 0.6s ease';
+                observer.observe(el);
+            });
+            
+            // Position floating icons
+            positionFloatingIcons();
+            
+            // Add glitch effect data attribute
+            const glitchElement = document.querySelector('.glitch');
+            if (glitchElement) {
+                glitchElement.setAttribute('data-text', glitchElement.textContent);
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add interactive cursor effect
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.querySelector('.cursor');
+            if (!cursor) {
+                const newCursor = document.createElement('div');
+                newCursor.className = 'cursor';
+                newCursor.style.cssText = `
+                    position: fixed;
+                    width: 20px;
+                    height: 20px;
+                    background: linear-gradient(135deg, #00d4ff, #7c3aed);
+                    border-radius: 50%;
+                    pointer-events: none;
+                    z-index: 9999;
+                    opacity: 0.8;
+                    filter: blur(1px);
+                    transition: all 0.1s ease;
+                `;
+                document.body.appendChild(newCursor);
+            }
+            
+            const cursorEl = document.querySelector('.cursor');
+            cursorEl.style.left = e.clientX - 10 + 'px';
+            cursorEl.style.top = e.clientY - 10 + 'px';
+        });
+
+        // Add hover effects for interactive elements
+        document.querySelectorAll('.btn, .tech-card, .testimonial-card, .quick-nav-card').forEach(el => {
+            el.addEventListener('mouseenter', function() {
+                const cursor = document.querySelector('.cursor');
+                if (cursor) {
+                    cursor.style.transform = 'scale(2)';
+                    cursor.style.opacity = '0.5';
+                }
+            });
+            
+            el.addEventListener('mouseleave', function() {
+                const cursor = document.querySelector('.cursor');
+                if (cursor) {
+                    cursor.style.transform = 'scale(1)';
+                    cursor.style.opacity = '0.8';
+                }
+            });
+        });
+
+        // Add data-progress attributes to tech cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const techCards = document.querySelectorAll('.tech-card');
+            const progressValues = ['90', '85', '88', '82', '80', '75'];
+            
+            techCards.forEach((card, index) => {
+                const progressWrapper = card.querySelector('.tech-progress');
+                if (progressWrapper) {
+                    progressWrapper.dataset.progress = progressValues[index] || '75';
+                }
+            });
+        });
+
+        // Add shimmer animation
+        const shimmerStyle = document.createElement('style');
+        shimmerStyle.textContent = `
+            @keyframes shimmer {
+                0% { transform: translateX(-100%); }
+                100% { transform: translateX(100%); }
+            }
+            
+            @keyframes rotate {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+            
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 100%; }
+            }
+            
+            .cursor {
+                transition: all 0.15s ease !important;
+            }
+        `;
+        document.head.appendChild(shimmerStyle);
+        
+        // Enhanced Navigation JavaScript
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+        }
+        
+        // Active navigation link based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+        
+        function updateActiveNav() {
+            const scrollY = window.pageYOffset;
+            
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - 100;
+                const sectionId = current.getAttribute('id');
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveNav);
+        
+        // Set initial active nav link
+        updateActiveNav();
+    </script>
+
+<div class="cursor" style="position: fixed; width: 20px; height: 20px; background: linear-gradient(135deg, rgb(0, 212, 255), rgb(124, 58, 237)); border-radius: 50%; pointer-events: none; z-index: 9999; opacity: 0.8; filter: blur(1px); transition: 0.1s; left: 1056px; top: 452px;"></div></body></html>
